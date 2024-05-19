@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+:root{
+  --background:#FDFFFC;
+  --calculadora:#EBEBEB;
+  --btn:#FDFFFC;
+  --operador:#9448BC;
+}
+*{
+  margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #252323;
+}
+body{
+  font-family: "Play", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+}
+.calculadora{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  background-color: var(--calculadora);
+  width: 20rem;
+  height: 24rem;
+  box-shadow: 0.5rem 0.5rem 1rem #0000003f;
+}
+.calculadora-header{
+width: 100%;
+height: 14%;
+margin-bottom: 0.8rem;
+}
+.calculadora-header p{
+width: 100%;
+height: 100%;
+text-align: right;
+background-color: var(--background);
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+justify-content: end;
+}
+.calculadora-btn{
+  width: 100%;
+  height: 78%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.3rem;
+}
+.btn{
+  background-color: var(--btn);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.btn:hover{
+  background-color: #201d1e0a;
+}
+.operador{
+  background-color: var(--operador);
+}
+.operador:hover{
+  background-color: #9348bcb9;
+}
+.equal{
+  width: 315%;
+}
+.porcent{
+width: 100%;
+margin-left: 215%;
+}
